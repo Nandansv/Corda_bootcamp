@@ -18,9 +18,9 @@ public class ContractTests {
 
 //    @Test
 //    public void tokenContractImplementsContract() {
-//        assert(new TokenContract() instanceof Contract);
+//        assert new TokenContract() instanceof Contract;
 //    }
-
+//
 //    @Test
 //    public void tokenContractRequiresZeroInputsInTheTransaction() {
 //        transaction(ledgerServices, tx -> {
@@ -40,7 +40,7 @@ public class ContractTests {
 //            return null;
 //        });
 //    }
-
+//
 //    @Test
 //    public void tokenContractRequiresOneOutputInTheTransaction() {
 //        transaction(ledgerServices, tx -> {
@@ -60,7 +60,7 @@ public class ContractTests {
 //            return null;
 //        });
 //    }
-
+//
 //    @Test
 //    public void tokenContractRequiresOneCommandInTheTransaction() {
 //        transaction(ledgerServices, tx -> {
@@ -80,7 +80,7 @@ public class ContractTests {
 //            return null;
 //        });
 //    }
-
+//
 //    @Test
 //    public void tokenContractRequiresTheTransactionsOutputToBeATokenState() {
 //        transaction(ledgerServices, tx -> {
@@ -99,7 +99,7 @@ public class ContractTests {
 //            return null;
 //        });
 //    }
-
+//
 //    @Test
 //    public void tokenContractRequiresTheTransactionsOutputToHaveAPositiveAmount() {
 //        TokenState zeroTokenState = new TokenState(alice.getParty(), bob.getParty(), 0);
@@ -138,7 +138,7 @@ public class ContractTests {
 //            return null;
 //        });
 //    }
-
+//
 //    @Test
 //    public void tokenContractRequiresTheTransactionsCommandToBeAnIssueCommand() {
 //        transaction(ledgerServices, tx -> {
@@ -157,7 +157,7 @@ public class ContractTests {
 //            return null;
 //        });
 //    }
-
+//
 //    @Test
 //    public void tokenContractRequiresTheIssuerToBeARequiredSignerInTheTransaction() {
 //        TokenState tokenStateWhereBobIsIssuer = new TokenState(bob.getParty(), alice.getParty(), 1);

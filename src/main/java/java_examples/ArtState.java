@@ -10,7 +10,7 @@ import java.util.List;
 
 // Like all states, implements `ContractState`.
 public class ArtState implements ContractState {
-    // The attributes that will be stored on the ledger as part of the state.
+    // The attributessss that will be stored on the ledger as part of the state.
     private final String artist;
     private final String title;
     private final Party appraiser;
@@ -29,6 +29,7 @@ public class ArtState implements ContractState {
     @NotNull
     @Override
     public List<AbstractParty> getParticipants() {
+
         return ImmutableList.of(appraiser, owner);
     }
 
