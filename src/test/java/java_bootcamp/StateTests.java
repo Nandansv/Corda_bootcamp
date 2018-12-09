@@ -17,24 +17,24 @@ public class StateTests {
         new TokenState(alice, bob, 1);
     }
 
-//    @Test
-//    public void tokenStateHasGettersForIssuerOwnerAndAmount() {
-//        TokenState tokenState = new TokenState(alice, bob, 1);
-//        assertEquals(alice, tokenState.getIssuer());
-//        assertEquals(bob, tokenState.getOwner());
-//        assertEquals(1, tokenState.getAmount());
-//    }
+    @Test
+    public void tokenStateHasGettersForIssuerOwnerAndAmount() {
+        TokenState tokenState = new TokenState(alice, bob, 1);
+        assertEquals(alice, tokenState.getIssuer());
+        assertEquals(bob, tokenState.getOwner());
+        assertEquals(1, tokenState.getAmount());
+    }
 
-//    @Test
-//    public void tokenStateImplementsContractState() {
-//        assert(new TokenState(alice, bob, 1) instanceof ContractState);
-//    }
+    @Test
+    public void tokenStateImplementsContractState() {
+        assert(new TokenState(alice, bob, 1) instanceof ContractState);
+    }
 
-//    @Test
-//    public void tokenStateHasTwoParticipantsTheIssuerAndTheOwner() {
-//        TokenState tokenState = new TokenState(alice, bob, 1);
-//        assertEquals(2, tokenState.getParticipants().size());
-//        assert(tokenState.getParticipants().contains(alice));
-//        assert(tokenState.getParticipants().contains(bob));
-//    }
+    @Test
+    public void tokenStateHasTwoParticipantsTheIssuerAndTheOwner() {
+        TokenState tokenState = new TokenState(alice, bob, 1);
+        assertEquals(2, tokenState.getParticipants().size());
+        assert(tokenState.getParticipants().contains(alice));
+        assert(tokenState.getParticipants().contains(bob));
+    }
 }
